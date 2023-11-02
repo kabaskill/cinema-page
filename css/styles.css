@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin-inline: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-menu li {
+    list-style: none;
+    
+}
+
+.nav-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.big-banner {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 2fr 1fr 2fr;
+    place-items: center;
+    margin-inline: auto;
+    /* background-color: rgb(244, 169, 142); */
+}
+
+.big-banner figure {
+    grid-row: 1/ span 3;
+}
+
+.banner-text1 {
+    
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: monospace;
+
+    padding-inline: 5%;
+    
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.banner-text2 {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    padding-inline: 5%;
+}
+
+.banner-text3{
+    font-style: italic;
+    font-family: monospace;
+    font-size: 1.25rem;
+
+    padding-inline: 5%;
+}
+
+.screenings {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.program {
+    padding:2rem;
+}
+
+/* .current-program {
+    background-color: rgb(174, 131, 214);
+}
+
+.next-program {
+    background-color: rgb(211, 214, 131);
+} */
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
