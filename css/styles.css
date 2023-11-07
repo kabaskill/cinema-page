@@ -5,23 +5,27 @@
 html {
   background-color: aliceblue;
   font-family: "Courier New", Courier, monospace;
-  margin-inline: 60px;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  height: 80vh;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: monospace;
-}
-
-img {
-  width: 100%;
-  height: auto;
+  background-color: rgb(181, 208, 232);
+  padding-inline: 20px;
+  margin: 0;
 }
 
 h1 {
-  margin-right: auto;
   font-size: 2rem;
 }
 
@@ -37,8 +41,8 @@ h1 {
 
 .nav-menu a {
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 1.2rem;
+  color: rgb(178, 99, 44);
 }
 
 .big-banner {
@@ -46,12 +50,11 @@ h1 {
   grid-template-columns: 40% 60%;
   grid-template-rows: 2fr 1fr 2fr;
   place-items: center;
-  margin-inline: auto;
-  /* background-color: rgb(244, 169, 142); */
 }
 
-.big-banner figure {
+.banner-img {
   grid-row: 1 / span 3;
+  max-height: 100%;
 }
 
 .banner-text1 {
@@ -69,7 +72,6 @@ h1 {
   font-family: monospace;
   font-size: 1.5rem;
   font-weight: bold;
-
   padding-inline: 5%;
 }
 
@@ -77,27 +79,30 @@ h1 {
   font-style: italic;
   font-family: monospace;
   font-size: 1.25rem;
-
   padding-inline: 5%;
 }
 
-.screenings {
+.current-program {
   display: flex;
-  width: 100%;
-  height: auto;
-}
-
-.program {
-  padding: 2rem;
-}
-
-/* .current-program {
-    background-color: rgb(174, 131, 214);
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding-inline: 5rem;
 }
 
 .next-program {
-    background-color: rgb(211, 214, 131);
-} */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10rem;
+  padding-inline: 5rem;
+}
+
+.program-img {
+  max-width: 40vw;
+  height: auto;
+  max-height: 100%;
+}
 
 footer {
   text-align: center;
